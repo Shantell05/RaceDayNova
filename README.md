@@ -9,7 +9,8 @@ server-side session authentication, role-based access for **Organisers** and **P
 tests and a GitHub Actions CI/CD pipeline. The design follows the Part 1 ERD, SQL script and endpoint plan (see `/docs`).
 
  
- **GitHub repository** | `PASTE YOUR REPOSITORY LINK HERE` |
+ **GitHub repository** | `PASTE YOUR REPOSITORY LINK HERE` 
+ 
  **YouTube video (unlisted)** | `PASTE YOUR UNLISTED YOUTUBE LINK HERE` |
 
  
