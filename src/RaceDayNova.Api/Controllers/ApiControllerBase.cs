@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
+ using Microsoft.AspNetCore.Mvc;
 using RaceDayNova.Api.Security;
 
 namespace RaceDayNova.Api.Controllers;
