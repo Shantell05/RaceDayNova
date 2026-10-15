@@ -8,12 +8,11 @@ This repository holds the **ASP.NET Core 8 Web API** that powers it: SQL Server 
 server-side session authentication, role-based access for **Organisers** and **Participants**, Swagger, unit/integration
 tests and a GitHub Actions CI/CD pipeline. The design follows the Part 1 ERD, SQL script and endpoint plan (see `/docs`).
 
-| | |
-|---|---|
-| **GitHub repository** | `PASTE YOUR REPOSITORY LINK HERE` |
-| **YouTube video (unlisted)** | `PASTE YOUR UNLISTED YOUTUBE LINK HERE` |
+ 
+ **GitHub repository** | `PASTE YOUR REPOSITORY LINK HERE` |
+ **YouTube video (unlisted)** | `PASTE YOUR UNLISTED YOUTUBE LINK HERE` |
 
----
+ 
 
 ## Repository structure
 
@@ -141,8 +140,6 @@ All endpoints are visible and testable in Swagger, each with a description, expe
 | GET | `/api/events/{id}/weather` | Public |
 | GET | `/api/health` | Public |
 
-See [`docs/Part2_API_Implementation_Notes.md`](docs/Part2_API_Implementation_Notes.md) for business rules, status codes and the deviations from the Part 1 plan.
-
 ## Unit tests
 
 `tests/RaceDayNova.Tests` (xUnit) starts the real API in memory and calls it over HTTP. It covers success **and** failure scenarios for:
@@ -163,8 +160,6 @@ sections), then (2) restores, builds in Release and **runs all tests**, uploadin
  <img width="1350" height="584" alt="image" src="https://github.com/user-attachments/assets/c76ecd99-6329-4340-a162-a265a1b0b79a" />
  <img width="1344" height="637" alt="image" src="https://github.com/user-attachments/assets/cef95673-1f0a-452c-a45b-b080fee21408" />
  <img width="1353" height="637" alt="image" src="https://github.com/user-attachments/assets/6d8169d0-403e-4b56-9883-1c5f5f20b485" />
-
-
 
 
 ## Video
