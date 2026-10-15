@@ -1,4 +1,4 @@
-namespace RaceDayNova.Api.Models;
+ namespace RaceDayNova.Api.Models;
 
 /// <summary>Maps to dbo.Users. One table holds both Organisers and Participants (see UserRole).</summary>
 public class AppUser
