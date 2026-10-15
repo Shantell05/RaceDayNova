@@ -1,4 +1,4 @@
-namespace RaceDayNova.Api.Models;
+ namespace RaceDayNova.Api.Models;
 
 /// <summary>Maps to dbo.Events.</summary>
 public class Event
