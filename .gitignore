@@ -1,0 +1,16 @@
+## .NET / Visual Studio
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.userprefs
+TestResults/
+coverage/
+*.trx
+*.log
+publish/
+
+## Secrets and local settings
+appsettings.Local.json
+secrets.json

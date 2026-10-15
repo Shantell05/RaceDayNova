@@ -1,0 +1,72 @@
+name: RaceDay Nova Part 2 - Build and Test
+
+on:
+  push:
+    branches: [ "**" ]
+  pull_request:
+
+jobs:
+  validate-structure:
+    name: Validate repository structure
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check required files and folders exist
+        run: |
+          missing=0
+          required=(
+            "README.md"
+            "RaceDayNova.sln"
+            ".gitignore"
+            "src/RaceDayNova.Api/RaceDayNova.Api.csproj"
+            "src/RaceDayNova.Api/Program.cs"
+            "src/RaceDayNova.Api/appsettings.json"
+            "src/RaceDayNova.Api/Controllers"
+            "src/RaceDayNova.Api/Models"
+            "src/RaceDayNova.Api/Data/RaceDayDbContext.cs"
+            "tests/RaceDayNova.Tests/RaceDayNova.Tests.csproj"
+            "docs/RaceDay_Nova_ERD.png"
+            "docs/RaceDay_Nova_Database.sql"
+            "docs/RaceDay_Nova_API_Endpoint_Plan.md"
+          )
+          for item in "${required[@]}"; do
+            if [ -e "$item" ]; then echo "OK      $item"; else echo "::error::MISSING $item"; missing=1; fi
+          done
+          exit $missing
+
+      - name: Check README has the required sections
+        run: |
+          missing=0
+          for heading in "Setup" "Roles" "CI/CD" "Video"; do
+            if grep -qi "^#.*$heading" README.md; then echo "OK      README section: $heading"; else echo "::error::README is missing a '$heading' section"; missing=1; fi
+          done
+          exit $missing
+
+  build-and-test:
+    name: Build and run unit tests
+    needs: validate-structure
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Restore
+        run: dotnet restore RaceDayNova.sln
+
+      - name: Build
+        run: dotnet build RaceDayNova.sln --configuration Release --no-restore
+
+      - name: Test
+        run: dotnet test RaceDayNova.sln --configuration Release --no-build --logger "trx;LogFileName=test-results.trx" --logger "console;verbosity=normal"
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: "**/TestResults/*.trx"
