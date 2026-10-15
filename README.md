@@ -9,7 +9,7 @@ server-side session authentication, role-based access for **Organisers** and **P
 tests and a GitHub Actions CI/CD pipeline. The design follows the Part 1 ERD, SQL script and endpoint plan (see `/docs`).
 
  
- **GitHub repository** | `PASTE YOUR REPOSITORY LINK HERE` 
+ **GitHub repository** |  https://github.com/Shantell05/RaceDayNova 
  
  **YouTube video (unlisted)** | https://youtu.be/IzOM18MM2p4?si=tWKNBe9LzAN3Ydkj
 
