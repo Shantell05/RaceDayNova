@@ -1,13 +1,3 @@
- 
- 
- 
-
-
- 
-
-
-
-
 # RaceDay Nova - Part 2: RESTful API
 
 PROG6212 Programming 2B - Part 2 (Restful API Development)
@@ -171,6 +161,8 @@ sections), then (2) restores, builds in Release and **runs all tests**, uploadin
 **Green build screenshot:**
 
  <img width="1350" height="584" alt="image" src="https://github.com/user-attachments/assets/c76ecd99-6329-4340-a162-a265a1b0b79a" />
+ <img width="1344" height="637" alt="image" src="https://github.com/user-attachments/assets/cef95673-1f0a-452c-a45b-b080fee21408" />
+
 
 
 ## Video
