@@ -160,9 +160,8 @@ sections), then (2) restores, builds in Release and **runs all tests**, uploadin
 
 **Green build screenshot:**
 
-![Green CI build](docs/images/ci-green-build.png)
+ <img width="1350" height="584" alt="image" src="https://github.com/user-attachments/assets/c76ecd99-6329-4340-a162-a265a1b0b79a" />
 
-> Add your screenshot as `docs/images/ci-green-build.png` after the first green run on GitHub.
 
 ## Video
 
