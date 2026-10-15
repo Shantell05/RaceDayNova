@@ -11,7 +11,7 @@ tests and a GitHub Actions CI/CD pipeline. The design follows the Part 1 ERD, SQ
  
  **GitHub repository** | `PASTE YOUR REPOSITORY LINK HERE` 
  
- **YouTube video (unlisted)** | `PASTE YOUR UNLISTED YOUTUBE LINK HERE` |
+ **YouTube video (unlisted)** | https://youtu.be/IzOM18MM2p4?si=tWKNBe9LzAN3Ydkj
 
  
 
@@ -166,7 +166,7 @@ sections), then (2) restores, builds in Release and **runs all tests**, uploadin
 ## Video
 
 Unlisted YouTube video demonstrating the running API, code structure, endpoints, authentication and unit tests:
-`PASTE YOUR UNLISTED YOUTUBE LINK HERE`
+ https://youtu.be/IzOM18MM2p4?si=tWKNBe9LzAN3Ydkj
 
 ## Design notes
 
