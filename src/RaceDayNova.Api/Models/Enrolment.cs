@@ -1,4 +1,4 @@
-namespace RaceDayNova.Api.Models;
+ namespace RaceDayNova.Api.Models;
 
 /// <summary>Maps to dbo.Enrolments - links a Participant to an event category.</summary>
 public class Enrolment
