@@ -1,10 +1,10 @@
 # RaceDay Nova - Part 2: RESTful API
 
 PROG6212 Programming 2B - Part 2 (Restful API Development)
-Student: **Shantell Malatjie (ST10475153)**
+Student: Shantell Malatjie (ST10475153)
 
 RaceDay Nova is an event management system for the South African running, walking and cycling community.
-This repository holds the **ASP.NET Core 8 Web API** that powers it: SQL Server via Entity Framework Core (code-first),
+This repository holds the ASP.NET Core 8 Web API** that powers it: SQL Server via Entity Framework Core (code-first),
 server-side session authentication, role-based access for **Organisers** and **Participants**, Swagger, unit/integration
 tests and a GitHub Actions CI/CD pipeline. The design follows the Part 1 ERD, SQL script and endpoint plan (see `/docs`).
 
@@ -17,7 +17,6 @@ tests and a GitHub Actions CI/CD pipeline. The design follows the Part 1 ERD, SQ
 
 ## Repository structure
 
-```
 RaceDayNova.sln
 .github/workflows/part2-ci.yml     GitHub Actions: validate structure, build, run all tests
 docs/                              Part 1 ERD, SQL script, endpoint plan + Part 2 notes
@@ -30,7 +29,7 @@ src/RaceDayNova.Api/
   Services/                        Weather provider (Open-Meteo)
   Swagger/                         Operation filter that documents access rules
 tests/RaceDayNova.Tests/           xUnit tests (integration + unit)
-```
+
 
 ## Prerequisites
 
@@ -82,8 +81,7 @@ Organiser invite code for registering new Organisers (config key `Registration:O
 
 1. `POST /api/auth/login` with a demo account. The browser stores the session cookie automatically.
 2. Call any endpoint - each one lists who may use it. Log out with `POST /api/auth/logout` and log in as another role to see the 403 responses.
-
----
+ 
 
 ## The two roles
 
